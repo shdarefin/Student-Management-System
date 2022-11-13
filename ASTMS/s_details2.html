@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Student Information Submission Form</h2>
+
+
+<div class="container">
+  <form action="s_details2.php" method="post">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Student Id</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="s_id" placeholder="Student Id .. ">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Student Fist Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="s_f_n" placeholder="Student Fist Name..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Student Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="s_l_n" placeholder="Student Last Name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Student contract</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="s_contract" placeholder="Student contract..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">add another contract(if any)</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="s_a_contract" placeholder="add another contract(if any)..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Current semester</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="s_semester" placeholder="Current semester ..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Gender</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="gen" placeholder="Gender..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Birth Date</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="bod" placeholder="Birth Date..">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" type="submit" value="Add" class="btn-login"/>
+  </div>
+  </form>
+</div>
+   <form action="student.html" method="post">  
+   <input type="submit" type="submit" value="Back to Home Page" class="btn-login"/>
+   </form>
+<div>
+
+</div>
+
+</body>
+</html>
+
+
